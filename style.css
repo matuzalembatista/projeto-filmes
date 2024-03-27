@@ -1,0 +1,74 @@
+body {
+    width: 100%; /* Ocupa toda a largura da tela */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #171936;
+
+}
+
+#boxFilmes {
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto;
+
+}
+
+
+
+
+#boxFilmes div {
+    width:80%;
+    height: 800px;
+
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    margin-bottom: 10px; 
+    border-radius:32px;
+    box-shadow: 0 0 700px  #b8abf1;
+    background-color:currentColor;
+
+}
+
+
+#boxFilmes>div>h1{
+    padding-top: 15px;
+   font-size: 40px;
+   color: #ffffff;
+}
+
+#boxFilmes>div>img{
+    border-radius: 32px;
+    width: 60%;
+    padding-bottom: 15px;
+}
+
+#boxFilmes>div>img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/* Estilo para os parágrafos */
+.filme p:first-child, .filme p:last-child {
+    margin: 5px 0;
+    color: white; /* Cor do texto */
+    font-style: italic; /* Estilo da fonte */
+    font-weight: bolder;
+}
+
+
+p{
+color: aliceblue;
+
+}
+
+
+/* Equalização de altura */
+#boxFilmes::after {
+    content: '';
+    display: block;
+    clear: both;
+}
